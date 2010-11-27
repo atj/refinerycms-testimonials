@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    testimonials:
+      title: Testimonials
+  admin:
+    testimonials:
+      index:
+        title: Testimonials
+        create_new: Add New Testimonial
+        reorder: Reorder Testimonials
+        reorder_done: Done Reordering Testimonials
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Testimonials yet. Click "Add New Testimonial" to add your first testimonial.
+      testimonial:
+        view_live_html: View this testimonial live <br/><em>(opens in a new window)</em>
+        edit: Edit this testimonial
+        delete: Remove this testimonial forever
+  testimonials:
+    show:
+      other: Other Testimonials

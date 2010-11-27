@@ -1,0 +1,64 @@
+<% content_for :body_content_title do %>
+  <%= @testimonial.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  
+  <section>
+    <h1>Quote</h1>
+<p>    <%=raw @testimonial.quote %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Name</h1>
+<p>    <%=raw @testimonial.name %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Company</h1>
+<p>    <%=raw @testimonial.company %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Job Title</h1>
+<p>    <%=raw @testimonial.job_title %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Website</h1>
+<p>    <%=raw @testimonial.website %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Quoted On</h1>
+<p>    <%=raw @testimonial.quoted_on %>
+</p>
+  </section>
+  
+  <section>
+    <h1>Position</h1>
+<p>    <%=raw @testimonial.position %>
+</p>
+  </section>
+  
+<% end %>
+
+<% content_for :body_content_right do %>
+<aside>
+  <h2><%= t('.other') %></h2>
+  <ul id="testimonials">
+    <% @testimonials.each do |testimonial| %>
+      <li>
+        <%= link_to testimonial.name, testimonial_url(testimonial) %>
+      </li>
+    <% end %>
+  </ul>
+</aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

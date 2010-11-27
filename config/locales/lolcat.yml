@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    testimonials:
+      title: Testimonials
+  admin:
+    testimonials:
+      index:
+        title: Testimonials
+        create_new: CREATE NEW Testimonial
+        reorder: REORDR Testimonials
+        reorder_done: DUN REORDERIN Testimonials
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Testimonials YET. CLICK "CREATE NEW Testimonial" 2 ADD UR FURST testimonial.
+      testimonial:
+        view_live_html: VIEW DIS testimonial LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS testimonial
+        delete: REMOOV DIS testimonial FOREVR
+  testimonials:
+    show:
+      other: OTHR Testimonials
